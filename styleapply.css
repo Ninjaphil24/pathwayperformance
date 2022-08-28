@@ -1,0 +1,78 @@
+body{
+	background: url(images/background.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	
+}
+
+h4 {
+	text-align:center;
+	color:white;
+}
+
+ul{
+	text-align:center;
+	list-style:none;
+background-color:none;
+color:white;
+
+
+
+}
+
+h1 {
+	text-align:center;
+	color:white;
+	font-size:4em;
+	padding-top:30px;
+	
+}
+
+h2 {
+	text-align:center;
+	color:white;
+	font-size:2em;
+	
+}
+
+footer h3 {
+	display:inline;
+	margin: 1em;
+	}
+h3{
+	
+}
+
+h5{
+	text-align:center;
+}
+
+a {
+	color:rgb(51,204,255);
+	text-decoration: none;
+	padding: 15px
+}
+
+a:hover {
+	text-decoration: underline;
+	color:rgb(255,153,0);
+}
+
+
+form {
+	text-align:center;
+	color:white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

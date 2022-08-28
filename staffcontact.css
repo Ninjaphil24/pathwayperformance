@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+body
+{
+background: url(images/markgr.jpg);
+background-repeat: repeat;
+margin: 0;
+padding:0;
+font-family: 'Josefin Sans', sans-serif;
+}
+.title
+{
+  position: relative;
+  text-align: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+}
+.title h1
+{
+margin: 0;
+padding-top: 10px;
+text-shadow:
+   /* Outline */
+   -1px -1px 0 #000000,
+   1px -1px 0 #000000,
+   -1px 1px 0 #000000,
+   1px 1px 0 #000000,
+   -2px 0 0 #000000,
+   2px 0 0 #000000,
+   0 2px 0 #000000,
+   0 -2px 0 #000000;
+}
+.title h5
+{
+margin: 0;
+padding: 0;
+text-shadow:
+   /* Outline */
+   -1px -1px 0 #000000,
+   1px -1px 0 #000000,
+   -1px 1px 0 #000000,
+   1px 1px 0 #000000,
+   -2px 0 0 #000000,
+   2px 0 0 #000000,
+   0 2px 0 #000000,
+   0 -2px 0 #000000;
+}
+.left
+{
+  color: #fff;
+  position: absolute;
+  top: 5%;
+  left: 12%;
+  text-shadow:
+     /* Outline */
+     -1px -1px 0 #000000,
+     1px -1px 0 #000000,
+     -1px 1px 0 #000000,
+     1px 1px 0 #000000,
+     -2px 0 0 #000000,
+     2px 0 0 #000000,
+     0 2px 0 #000000,
+     0 -2px 0 #000000;
+}
+.right
+{
+  color: #fff;
+  position: absolute;
+  top: 5%;
+  right: 22.5%;
+  text-shadow:
+     /* Outline */
+     -1px -1px 0 #000000,
+     1px -1px 0 #000000,
+     -1px 1px 0 #000000,
+     1px 1px 0 #000000,
+     -2px 0 0 #000000,
+     2px 0 0 #000000,
+     0 2px 0 #000000,
+     0 -2px 0 #000000;
+}
+.vaccaro
+{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+.vaccaro .cover
+{
+  width: 200px;
+  height:250px;
+  object-fit: cover;
+  object-position: left top;
+}
+.vaccaro .card1
+{
+  height: 250px;
+}
+.vaccaro .card1 .back .details h2
+{
+  font-size: 24px;
+}
+.romana
+{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+.romana .cover
+{
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.claudia
+{
+  position: absolute;
+  top: 75%;
+  left: 20%
+  }
+.claudia .cover
+{
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.vit
+{
+  position: absolute;
+  top: 25%;
+  left: 20%
+  }
+.vit .cover
+{
+  width: 200px;
+  height: 120px;
+  object-fit: scale-down;
+}
+
+.alex
+{
+  position: absolute;
+  top: 50%;
+  left: 20%
+  }
+.alex .cover
+{
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+}
+.kassandra
+{
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  }
+.kassandra .cover
+{
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top left;
+}
+.jenny
+{
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  }
+.jenny .cover
+{
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+.philip
+{
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  }
+.philip .cover
+{
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+
+
+.card1
+{
+
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 120px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+
+.card1 .front
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+.card1:hover .front
+{
+  transform: rotateX(-180deg);
+}
+
+.card1 .back
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+
+}
+/* .card1 .back:before
+{
+content: '';
+position: absolute;
+top: 0;
+left: -50%;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, 0.1);
+
+} */
+.card1:hover .back
+{
+  transform: rotateX(0deg);
+}
+.card1 .back .details
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card1 .back .details h2
+{
+margin: 0;
+padding: 0;
+font-size: 13px;
+color: #fff;
+}
+.card1 .back .details h2 span
+{
+  color: #a7a7a7;
+  font-size: 10px;
+}
+
+.social-icons
+{
+padding: 10px 0;
+
+}
+.social-icons a
+{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #262626;
+  color:#fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.social-icons a .fa
+{
+  line-height: 36px;
+}
+.social-icons a:hover
+{
+background: #e91e63;
+}
+
+.home
+{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}
+
+.home a
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height:40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+box-sizing: border-box;
+background: linear-gradient(90deg, #03a9f4, #ffeb3b, #03a9f4);
+background-size: 400%;
+border-radius: 30px;
+z-index: 1;
+
+}
+.home a:hover
+{
+animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+0%
+{
+  background-position: 0%
+}
+100%
+{
+  background-position: 400%
+}
+}
+.home a:before
+{
+content: '';
+position: absolute;
+top: -5px;
+left: -5px;
+right: -5px;
+bottom: -5px;
+z-index: -1;
+background: linear-gradient(90deg, #03a9f4, #ffeb3b, #03a9f4);
+background-size: 400%;
+border-radius: 40px;
+filter: blur(20px);
+opacity: 0;
+transition: 0.5s;
+}
+.home a:hover:before
+{
+filter: blur(20px);
+opacity: 1;
+animation: animate 8s linear infinite;
+}

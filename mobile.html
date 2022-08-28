@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opera Pathway to Performance</title>
+    <link rel="stylesheet" href="mobile.css">
+      <link rel="stylesheet" href="swiper.min.css">
+    <title></title>
+  </head>
+  <body>
+
+
+<div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+
+     <div class="swiper-slide" style="background-image:url(images/mobile1.jpg)">
+       <div class="content">
+           <h2 style="font-size:2vw;position:relative;top:30%;">CLICK PLAY FOR INTRODUCTION</h2>
+           <div class="resp-container">
+               <iframe class="resp-iframe" src="https://www.youtube.com/embed/eudrB4IFUSI" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+           </div>
+           </div>
+    </div>
+
+    <div class="swiper-slide"style="background-image:url(images/mobile2.jpg)">
+      <div class="content">
+          <h2>PURPOSE OF THE PATHWAY</h2>
+          <p>Opera Classica Europa is proud to announce it’s newly expanded Summer Opera Studio:<br /> Opera Classica Europa’s Pathway to Performance.<br /><br /> In this, our 17th anniversary season, our OCE Emerging Artist program will collaborate with other Opera Organizations and Festivals including the opera festival "Cengio in Lirica" near Genova, the musical festival "Gegen Den Strom", Bad Homburg Music Summer, the Hellenic Opera Corporation and other festivals throughout Europe. Through our competitions and productions, we have provided young singers from around the world coveted stage experience. In addition, we have helped provide a pathway to professional engagement by providing important contacts. We have helped our past participants gain employment in Stuttgart, Oldenburg, Würzburg, Heidelberg, Pisa, Italy and in the National Theater Rumania in Constanta. Our instructional and professional staff are experienced performers, conductors, coaches and stage directors. Their vast experience will provide you with experientially based practical performance techniques. Opera Classica is singularly positioned to take you out of the practice room and onto the stage. We believe that one must apply their trade to grow as an artist. Please, visit our "CALENDAR" page to see our prices and to apply.</p>
+          </div>
+   </div>
+
+   <div class="swiper-slide"style="background-image:url(images/mobile3.jpg)">
+     <div class="content">
+         <h2>CALENDAR/APPLY/PRICES</h2>
+         <p>Click on the button below to see our calendar of events and performances, check out our prices, and to apply for a place in our program!
+           <br><br><br><br>
+   <a href="calendarphone.html">calendar</a>
+         </p>
+         </div>
+  </div>
+
+
+   <div class="swiper-slide"style="background-image:url(images/mobile4.jpg)">
+     <div class="content">
+       <h2>OPERA CLASSICA</h2>
+       <p>Opera Classica Europa is the leading European <br>touring company  with more than 500 performances in 14 countries.   <br><br><br><br><br><br><br><br>
+
+         <a href="http://www.operaclassica.de" target="_blank">website</a>
+</p>
+       </div>
+       </div>
+
+        <div class="swiper-slide"style="background-image:url(images/mobile5.jpg)">
+
+          <div class="content">
+         <h2>TEAM</h2>
+         <p>Click on the button below to get acquainted with us and all our collaborators.
+         <br><br><br><br>
+         <a href="teammob.html">team</a>
+
+         </p>
+         </div>
+
+         </div>
+
+
+  </div>
+  <!-- Add Arrows -->
+   <div class="swiper-button-next swiper-button-white"></div>
+   <div class="swiper-button-prev swiper-button-white"></div>
+</div>
+
+<div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(images/mobile1small.jpg)"></div>
+  <div class="swiper-slide" style="background-image:url(images/mobile2small.jpg)"></div>
+    <div class="swiper-slide" style="background-image:url(images/mobile3small.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/mobile4small.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(images/mobile5small.jpg)"></div>
+        </div>
+         </div>
+
+         <!-- Swiper JS -->
+         <script src="swiper.min.js"></script>
+
+         <!-- Initialize Swiper -->
+         <script>
+           var galleryThumbs = new Swiper('.gallery-thumbs', {
+             spaceBetween: 10,
+             slidesPerView: 5,
+             loop: true,
+             freeMode: true,
+             loopedSlides: 5, //looped slides should be the same
+             watchSlidesVisibility: true,
+             watchSlidesProgress: true,
+           });
+           var galleryTop = new Swiper('.gallery-top', {
+             spaceBetween: 10,
+             loop:true,
+             loopedSlides: 5, //looped slides should be the same
+             navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev',
+             },
+             thumbs: {
+               swiper: galleryThumbs,
+             },
+           });
+         </script>
+</body>
+</html>
